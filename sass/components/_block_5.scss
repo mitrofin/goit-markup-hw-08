@@ -1,0 +1,46 @@
+%centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-client {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @extend %centerFlex;
+    transition: $transition;
+    &:hover {
+      --color1: $accent-color;
+      background-color: $second-color;
+      border: 1px solid $accent-color;
+    }
+  }
+  .icon-Client1 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  .icon-Client2 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  
+  .icon-Client3 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  .icon-Client4 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  .icon-Client5 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  .icon-Client6 {
+    transition: $transition;
+    fill: $accent-color;
+  }
+  .last:not(:last-child) {
+    margin-right: 30px;
+  }

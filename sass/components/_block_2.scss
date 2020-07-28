@@ -1,0 +1,15 @@
+%centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grey-fon {
+    @extend %centerFlex;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }

@@ -1,0 +1,86 @@
+
+%centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.direction {
+    font-size: 16px;
+    line-height: 1.18em;
+    letter-spacing: 0.03em;
+    /*   padding-bottom: 16px; */
+    text-align: center;
+  }
+  .team:not(:last-child) {
+    margin-right: 30px;
+  }
+  .team-border {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .position {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    transition: $transition;
+  }
+  .position .box-social:hover,
+  .position .box-social:focus {
+  background-color: $accent-color;
+}
+ 
+  .box-social {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 24px;
+    @extend %centerFlex;
+    opacity: 100%;
+    border-radius: 50%;
+    transition: $transition;
+  }
+  
+  .line/* :not(:last-child) */ {
+    margin-right: 10px;
+  }
+  .icon-instagram2 {
+    --color1: currentcolor;
+    
+    transition: $transition;
+  }
+  .box-social:hover .icon-instagram2 {
+    color: $second-color;
+    
+  }
+  .icon-twitter1 {
+    --color1: currentcolor;
+    transition: $transition;
+  }
+  .box-social:hover .icon-twitter1 {
+    color: $second-color;
+  }
+  
+  .icon-facebook1 {
+    transition: $transition;
+    --color1: currentcolor;
+  }
+  .box-social:hover .icon-facebook1 {
+   color: $second-color;
+  }
+  
+  .icon-linkedin1 {
+    --color1: currentcolor ;
+    transition: $transition;
+  }
+  
+  .box-social:hover .icon-linkedin1 {
+    color: $second-color;
+  }
+  .grey {
+    background-color: #f5f4fa;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+  }
+  
