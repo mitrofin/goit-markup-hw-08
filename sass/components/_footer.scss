@@ -1,4 +1,4 @@
-%centerFlex{
+%centerFlex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@ footer {
 }
 .developed {
   @extend %centerFlex;
-  width: 1170px;
+  max-width: 1170px;
   padding-top: 18px;
   padding-bottom: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -41,13 +41,13 @@ footer {
   padding-top: 45px;
   padding-bottom: 8px;
 }
-.footer-main {
+/* .footer-main {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
+} */
 .footer-form {
-  width: 570px;
+  max-width: 570px;
 }
 .string {
   width: 358px;
@@ -58,7 +58,6 @@ footer {
   border-radius: 4px;
   background-color: #2f303a;
   color: $second-color;
-  
 }
 .container > .footer-main {
   min-height: 197px;
@@ -71,4 +70,3 @@ footer {
   opacity: 90%;
   border-radius: 50%;
 }
-
