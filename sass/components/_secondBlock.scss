@@ -1,7 +1,13 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .inf-size {
     width: 100%;
     margin-right: 0;
+  }
+  .subclass {
+    text-align: center;
+  }
+  .text-size {
+    margin-bottom: 30px;
   }
 }
 

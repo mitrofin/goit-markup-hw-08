@@ -73,6 +73,7 @@
 .menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
   border-bottom: 1px solid #ececec;
 }
@@ -85,6 +86,11 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:hover,
+  :focus {
+    fill: $accent-color;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -103,7 +109,7 @@
   display: none;
 }
 
-.menu-container {
+.container-menu {
   background-color: palegoldenrod;
   padding: 20px;
   text-align: center;

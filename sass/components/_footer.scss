@@ -50,7 +50,8 @@ footer {
   max-width: 570px;
 }
 .string {
-  width: 358px;
+  min-width: 320px;
+  max-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -59,8 +60,11 @@ footer {
   background-color: #2f303a;
   color: $second-color;
 }
-.container > .footer-main {
-  min-height: 197px;
+.container {
+  &-main {
+    display: flex;
+    min-height: 197px;
+  }
 }
 .white-style {
   color: $second-color;
@@ -69,4 +73,19 @@ footer {
   background-color: #515261;
   opacity: 90%;
   border-radius: 50%;
+}
+@media screen and (max-width: 479px) {
+  .footer-main,
+  .footer-address .white,
+  .footer-social .white,
+  .footer-form .white {
+    text-align: center;
+  }
+  .footer-address,
+  .footer-social {
+    margin-bottom: 60px;
+  }
+  .string {
+    margin-bottom: 20px;
+  }
 }
