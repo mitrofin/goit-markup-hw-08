@@ -44,16 +44,33 @@
 .last:not(:last-child) {
   margin-right: 30px;
 }
-@media screen and (max-width: 479px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    /* padding-left: 0px; */
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+    width: 100%;
   }
-  .last-clients {
-    width: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: 480px) {
+    .last-clients {
+      width: calc((100% - 4 * 15px) / 2);
+    }
   }
+  @media screen and (min-width: 768px) {
+    .last-clients {
+      width: calc((100% - 4 * 15px) / 3);
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .last-clients {
+      width: calc((100% - 4 * 15px) / 6);
+    }
+  }
+
   .box-client {
     margin: 15px;
   }

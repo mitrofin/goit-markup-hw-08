@@ -1,4 +1,4 @@
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1170px) {
   .what-we-doing {
     display: none;
   }
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .box-info {
-  width: 370px;
+  min-width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   @extend %centerFlex;
