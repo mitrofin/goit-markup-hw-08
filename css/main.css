@@ -308,7 +308,10 @@ ul {
 
 @media screen and (min-width: 1170px) {
   .container {
-    width: 1140px;
+    width: 1170px;
+  }
+  .container .herro {
+    width: 1600px;
   }
 }
 
@@ -516,6 +519,7 @@ address {
   }
   .container-menu.is-open {
     display: block;
+    z-index: 10;
   }
 }
 
@@ -595,6 +599,12 @@ address {
   }
 }
 
+@media screen and (max-width: 1140px) {
+  .five ul {
+    padding-left: revert;
+  }
+}
+
 /* %centerFlex {
   display: flex;
   align-items: center;
@@ -649,15 +659,12 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /* .footer-form {
-      text-align: center;
-      width: 66%;
-      margin-left: auto;
-      margin-right: auto;
-    } */
   }
   .footer-main .block {
     width: calc((100% - 3 * 15px) / 2);
+  }
+  .footer-main .string {
+    width: 450px;
   }
 }
 
@@ -733,6 +740,52 @@ footer {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .footer-main,
+  .footer-address .white,
+  .footer-social .white,
+  .footer-form .white {
+    text-align: center;
+  }
+  .footer-address,
+  .footer-social {
+    margin: 60px 0;
+  }
+  .string {
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding-top: 0;
+  }
+  .footer-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .footer-main,
+  .footer-address .white,
+  .footer-social .white,
+  .footer-form .white {
+    text-align: left;
+  }
+  .footer-address,
+  .footer-social {
+    margin: 0px;
+  }
+  .string {
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding-top: 45px;
+  }
+  .footer-form {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+}
+
 .herro-title {
   color: #ffffff;
   font-style: normal;
@@ -787,6 +840,14 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1170px) {
+  .image-hero {
+    /* width: 1600px; */
+    margin-left: -200px;
+    margin-right: -200px;
+  }
 }
 
 .close, .grey-fon, .box-info, .box-social, .box-client {
@@ -1242,7 +1303,19 @@ input:focus {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 768px) {
+  .our-work-item {
+    width: calc(100% * 1 / 2);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .our-work-item {
+    width: calc(100% * 1 / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
   .our-work-item {
     display: block;
     width: 100%;
@@ -1649,11 +1722,6 @@ input:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
-  /* .five {
-    ul {
-      padding-left: 0;
-    }
-  } */
 }
 
 @media screen and (max-width: 480px) {

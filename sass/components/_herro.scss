@@ -42,3 +42,10 @@
   justify-content: center;
   text-align: center;
 }
+@media screen and (min-width: 1170px) {
+  .image-hero {
+    /* width: 1600px; */
+    margin-left: -200px;
+    margin-right: -200px;
+  }
+}
