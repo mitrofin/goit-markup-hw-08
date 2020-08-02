@@ -827,12 +827,20 @@ footer {
   background-color: rgba(47, 48, 58, 0.8);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+  background-size: cover;
   background-position: center;
   /* background-image: url(../images/Header.jpg); */
   /* display: grid; */
   /* background-color: rgba(47, 48, 58, 0.8);
   width: 1600px;
   height: 600px; */
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .image-hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/HeaderX2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/HeaderX2.jpg);
+  }
 }
 
 .hero {
@@ -842,14 +850,13 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 1170px) {
+/* @media screen and (min-width: 1170px) {
   .image-hero {
-    /* width: 1600px; */
+    width: 1600px;
     margin-left: -200px;
     margin-right: -200px;
   }
-}
-
+} */
 .close, .grey-fon, .box-info, .box-social, .box-client {
   display: -webkit-box;
   display: -ms-flexbox;
