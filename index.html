@@ -219,9 +219,12 @@
                 <li class="box-employment">
                   <a href="">
                     <div class="what-we-do">
-                      <img class="image-employment" 
-                      srcset="images/laptopX2.jpg 2x, images/laptop.jpg 1x"
-                      src="images/laptop.jpg" alt="laptop" />
+                      <picture>
+                        <source srcset="images/laptopX2.jpg 2x, images/laptop.jpg 1x"
+                      media="(min-width: 1200px)">
+                       <img class="image-employment" src="images/laptop.jpg" alt="laptop" />
+                      </picture>
+                      
                       <div class="box-info">
                         <h3 class="subclass white">Десктопные приложения</h3>
                       </div>
@@ -232,9 +235,12 @@
                 <li class="box-employment">
                   <a href="">
                     <div class="what-we-do">
-                        <img  class="image-employment" 
-                        srcset="images/mobileX2.jpg 2x, images/mobile.jpg 1x"
-                        src="images/mobile.jpg" alt="mobile" />
+                      <picture>
+                        <source srcset="images/mobileX2.jpg 2x, images/mobile.jpg 1x"
+                         media="(min-width: 1200px)">
+                         <img class="image-employment" src="images/mobile.jpg" alt="mobile" />
+                      </picture>
+                        
                         <div class="box-info">
                           <h3 class="subclass white">Мобильные приложения</h3>
                       </div>
@@ -245,9 +251,12 @@
                 <li class="box-employment">
                   <a href="">
                     <div class="what-we-do">
-                      <img  class="image-employment"
-                      srcset="images/desktopX2.jpg 2x, images/desktop.jpg 1x"
-                      src="images/desktop.jpg" alt="desktop" />
+                      <picture>
+                        <source srcset="images/desktopX2.jpg 2x, images/desktop.jpg 1x"
+                        media="(min-width: 1200px)">
+                          <img class="image-employment" src="images/desktop.jpg" alt="desktop" />
+                      </picture>
+                      
                       <div class="box-info">
                         <h3 class="subclass white">Дизайнерские решения</h3>
                       </div>
@@ -268,9 +277,12 @@
               </header>
               <ul class="info">
                 <li class="team team-border">
-                  <img 
-                  srcset="./images/john_mobX1.jpg 1x, ./images/john_mobX2.jpg 2x"
-                  src="images/john.jpg" alt="john" />
+                  <picture>
+                    <source srcset="./images/john_mobX1.jpg 1x, ./images/john_mobX2.jpg 2x" media="(max-width: 479px)">
+                    <source srcset="./images/john_deskX1.jpg 1x, ./images/john_deskX2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/john_tabX1.jpg 1x, ./images/john_tabX2.jpg 2x" media="(min-width: 480px)">
+                    <img src="images/john.jpg" alt="john" />
+                  </picture >
                   <h3 class="name">Николай Кучеренко</h3>
                   <p class="direction" lang="en">Product Designer</p>
                   <ul class="position">
@@ -313,9 +325,12 @@
                   </ul>
                 </li>
                 <li class="team team-border">
-                  <img
-                  srcset="./images/marta_mobX1.jpg 1x, ./images/marta_mobX2.jpg 2x" 
-                  src="images/marta.jpg" alt="marta" />
+                  <picture>
+                    <source srcset="./images/marta_mobX1.jpg 1x, ./images/marta_mobX2.jpg 2x" media="(max-width: 479px)">
+                    <source srcset="./images/marta_deskX1.jpg 1x, ./images/marta_deskX2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/marta_tabX1.jpg 1x, ./images/marta_tabX2.jpg 2x" media="(min-width: 480px)">
+                    <img src="images/marta.jpg" alt="marta" />
+                  </picture>
                   <h3 class="name">Ольга Иванова</h3>
                   <p class="direction" lang="en">Frontend Developer</p>
                   <ul class="position">
@@ -358,9 +373,12 @@
                   </ul>
                 </li>
                 <li class="team team-border">
-                  <img 
-                  srcset="./images/robert_mobX1.jpg 1x, ./images/robert_mobX2.jpg 2x"
-                  src="images/robert.jpg" alt="robert" />
+                  <picture>
+                    <source srcset="./images/robert_mobX1.jpg 1x, ./images/robert_mobX2.jpg 2x" media="(max-width: 479px)">
+                    <source srcset="./images/robert_deskX1.jpg 1x, ./images/robert_deskX2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/robert_tabX1.jpg 1x, ./images/robert_tabX2.jpg 2x" media="(min-width: 480px)">
+                    <img src="images/robert.jpg" alt="robert" />
+                  </picture>
                   <h3 class="name">Андрей Шевченко</h3>
                   <p class="direction" lang="en">Marketing</p>
                   <ul class="position">
@@ -403,9 +421,12 @@
                   </ul>
                 </li>
                 <li class="team team-border">
-                  <img
-                  srcset="./images/martin_mobX1.jpg 1x, ./images/martin_mobX2.jpg 2x"
-                  src="images/martin.jpg" alt="martin" />
+                  <picture>
+                    <source srcset="./images/martin_mobX1.jpg 1x, ./images/martin_mobX2.jpg 2x" media="(max-width: 479px)">
+                    <source srcset="./images/martin_deskX1.jpg 1x, ./images/martin_deskX2.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/martin_tabX1.jpg 1x, ./images/martin_tabX2.jpg 2x" media="(min-width: 480px)">
+                    <img src="images/martin.jpg" alt="martin" />
+                  </picture>
                   <h3 class="name">Иван Николаев</h3>
                   <p class="direction" lang="en">UI Designer</p>
                   <ul class="position">
