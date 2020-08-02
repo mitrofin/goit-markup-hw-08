@@ -1375,6 +1375,26 @@ input:focus {
           transform: translateY(calc(-100% + 290px));
 }
 
+@media screen and (max-width: 768px) {
+  .our-work-opacity:hover .opacity {
+    -webkit-transform: translateY(calc(-100% + 370px));
+            transform: translateY(calc(-100% + 370px));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-work-opacity:hover .opacity {
+    -webkit-transform: translateY(calc(-100% + 330px));
+            transform: translateY(calc(-100% + 330px));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-work-opacity p {
+    padding: 120px 15px;
+  }
+}
+
 .opacity {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -62,6 +62,17 @@
   &:hover .opacity {
     opacity: 1;
     transform: translateY(calc(-100% + 290px));
+    @media screen and (max-width: 768px) {
+      transform: translateY(calc(-100% + 370px));
+    }
+    @media screen and (max-width: 480px) {
+      transform: translateY(calc(-100% + 330px));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    p {
+      padding: 120px 15px;
+    }
   }
 }
 .opacity {
