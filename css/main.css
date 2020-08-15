@@ -458,7 +458,6 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 80px;
-  border-bottom: 1px solid #757575;
 }
 
 .current-studio:-moz-read-only {
@@ -603,6 +602,13 @@ address {
   .five ul {
     padding-left: revert;
   }
+}
+
+.header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #757575;
 }
 
 /* %centerFlex {
@@ -843,11 +849,10 @@ footer {
   }
 }
 
-.hero {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.herro {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* @media screen and (min-width: 1170px) {
@@ -928,10 +933,22 @@ textarea {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .modal {
     width: calc(100% - 40px);
     font-size: 12px;
+    line-height: 1.1 0.6em;
+  }
+  .agry {
+    font-size: 12px;
+    line-height: 1.16em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 30px);
+    max-width: 528px;
   }
 }
 
@@ -1117,6 +1134,12 @@ textarea {
   display: inline-block;
   margin-top: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .send-label {
+    display: inline;
+  }
 }
 
 .form-field:focus-within > .form-label,
